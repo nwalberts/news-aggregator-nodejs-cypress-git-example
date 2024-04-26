@@ -33,7 +33,7 @@ class Article {
     return true
   }
 
-  findById(){
+  getArticleUsingId(){
     // good code
   }
 }
