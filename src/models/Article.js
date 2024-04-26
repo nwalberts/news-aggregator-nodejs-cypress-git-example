@@ -10,7 +10,7 @@ class Article {
   constructor({ title, url, description }) {
     this.title = title
     this.url = url
-    this.description = description || "none given"
+    this.description = description
   }
 
   static findAll() {
@@ -31,6 +31,10 @@ class Article {
     const data = { articles: articles }
     fs.writeFileSync(articlesPath, JSON.stringify(data))
     return true
+  }
+
+  getArticleUsingId(){
+    // good code
   }
 }
 
